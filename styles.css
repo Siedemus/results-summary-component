@@ -12,6 +12,10 @@
     --color-lavender: hsl(241, 100%, 89%);
     --color-darkLavender: hsl(241, 21%, 63%);
     --color-gray: hsl(224, 30%, 27%);
+    --alpha-lightRed: rgb(255, 87, 87, 0.1);
+    --alpha-orangeYellow: rgb(255, 176, 31, 0.1);
+    --alpha-greenTeal: rgb(0, 189, 145, 0.1);
+    --alpha-cobaltBlue: rgb(17, 37, 212, 0.1);
 
     --fs-basic: 18px;
 
@@ -93,7 +97,7 @@ body {
     display: grid;
     grid-template-columns: 0.2fr 1.5fr 0.3fr 0.1fr 0.3fr;
     align-items: center;
-    background-color: var(--color-lavender);
+    background-color: var(--alpha-cobaltBlue);
     color: var(--color-darkLavender);
     padding: 15px 20px;
     border-radius: 10px;
@@ -122,4 +126,28 @@ body {
 
 .category__score {
     text-align: center;
+}
+
+.category__name--reaction {
+    color: var(--color-lightRed);
+}
+
+.test_category--reaction {
+    background-color: var(--alpha-lightRed);
+}
+
+.category__name--memory {
+    color: var(--color-lightYellow);
+}
+
+.test_category--memory {
+    background-color: var(--alpha-orangeYellow);
+}
+
+.category__name--verbal {
+    color: var(--color-lightGreen);
+}
+
+.test_category--verbal {
+    background-color: var(--alpha-greenTeal);
 }
