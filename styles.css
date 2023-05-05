@@ -41,7 +41,7 @@ body {
 }
 
 .article {
-    max-width: 700px;
+    max-width: 590px;
     box-shadow: 28px 18px 62px -5px var(--color-lavender);
     -webkit-box-shadow: 28px 18px 62px -5px var(--color-lavender);
     -moz-box-shadow: 28px 18px 62px -5px var(--color-lavender);
