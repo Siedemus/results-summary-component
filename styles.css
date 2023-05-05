@@ -1,8 +1,15 @@
 :root {
-    --background-gradient: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    --circle-gradient: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    --btn-gradient: linear-gradient(to right, hsl(252, 100%, 67%), hsl(241, 81%, 54%), hsl(241, 81%, 54%), hsl(252, 100%, 67%));
-
+    --background-gradient: linear-gradient(to bottom,
+            hsl(252, 100%, 67%),
+            hsl(241, 81%, 54%));
+    --circle-gradient: linear-gradient(to bottom,
+            hsla(256, 72%, 46%, 1),
+            hsla(241, 72%, 46%, 0));
+    --btn-gradient: linear-gradient(to right,
+            hsl(252, 100%, 67%),
+            hsl(241, 81%, 54%),
+            hsl(241, 81%, 54%),
+            hsl(252, 100%, 67%));
 
     --color-lightRed: hsl(0, 100%, 67%);
     --color-lightYellow: hsl(39, 100%, 56%);
@@ -30,6 +37,7 @@ body {
 
 .main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -38,6 +46,16 @@ body {
     main {
         height: 100%;
     }
+}
+
+.footer {
+    margin: 30px auto;
+    text-align: center;
+    color: var(--color-darkLavender);
+}
+
+.footer a {
+    color: var(--color-lightBlue);
 }
 
 .article {
