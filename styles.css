@@ -10,7 +10,7 @@
     --color-white: hsl(0, 0%, 100%);
     --color-paleBlue: hsl(221, 100%, 96%);
     --color-lavender: hsl(241, 100%, 89%);
-    --color-darkLavender: hsl(241, 30%, 71%);
+    --color-darkLavender: hsl(241, 21%, 63%);
     --color-gray: hsl(224, 30%, 27%);
 
     --fs-basic: 18px;
@@ -79,6 +79,47 @@ body {
 }
 
 .summary__subHeader {
-    color:black;
+    color: black;
     font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.summary__test {
+    display: grid;
+    gap: 20px;
+}
+
+.test_category {
+    display: grid;
+    grid-template-columns: 0.2fr 1.5fr 0.3fr 0.1fr 0.3fr;
+    align-items: center;
+    background-color: var(--color-lavender);
+    color: var(--color-darkLavender);
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.category__icon {
+    justify-self: flex-start;
+}
+
+.category__name {
+    margin-left: 10px;
+    font-weight: bold;
+    color: var(--color-lightBlue);
+}
+
+.category__scored {
+    text-align: center;
+    color: var(--color-gray);
+    font-weight: 800;
+}
+
+.category__breaker {
+    text-align: center;
+
+}
+
+.category__score {
+    text-align: center;
 }
