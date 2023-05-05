@@ -1,5 +1,9 @@
 # Frontend Mentor - Results summary component
 
+## Welcome! 👋
+
+Thanks for checking out this front-end coding challenge.
+
 ## Preview
 
 ![](/images/animation.gif)
@@ -8,10 +12,6 @@
 
 View the optimal layout depending on their device's screen size
 See hover and focus states for interactive elements
-
-## Welcome! 👋
-
-Thanks for checking out this front-end coding challenge.
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
 
