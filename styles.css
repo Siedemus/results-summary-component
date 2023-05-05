@@ -1,6 +1,7 @@
 :root {
     --background-gradient: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     --circle-gradient: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    --btn-gradient: linear-gradient(to right, hsl(252, 100%, 67%), hsl(241, 81%, 54%), hsl(241, 81%, 54%), hsl(252, 100%, 67%));
 
 
     --color-lightRed: hsl(0, 100%, 67%);
@@ -83,7 +84,7 @@ body {
 }
 
 .summary__subHeader {
-    color: black;
+    color: var(--color-gray);
     font-size: 18px;
     margin-bottom: 10px;
 }
@@ -97,7 +98,7 @@ body {
     display: grid;
     grid-template-columns: 0.2fr 1.5fr 0.3fr 0.1fr 0.3fr;
     align-items: center;
-    background-color: var(--alpha-cobaltBlue);
+    background-color: var(--color-white);
     color: var(--color-darkLavender);
     padding: 15px 20px;
     border-radius: 10px;
@@ -110,7 +111,7 @@ body {
 .category__name {
     margin-left: 10px;
     font-weight: bold;
-    color: var(--color-lightBlue);
+    color: var(--color-lavender);
 }
 
 .category__scored {
@@ -121,7 +122,6 @@ body {
 
 .category__breaker {
     text-align: center;
-
 }
 
 .category__score {
@@ -150,4 +150,37 @@ body {
 
 .test_category--verbal {
     background-color: var(--alpha-greenTeal);
+}
+
+.category_name--visual {
+    color: var(--color-lightBlue);
+}
+
+.test_category--visual {
+    background-color: var(--alpha-cobaltBlue);
+}
+
+.result__button {
+    margin: 15px 0;
+    border-radius: 25px;
+    border: none;
+    padding: 15px;
+    color: var(--color-white);
+    font-weight: bold;
+    background-image: var(--btn-gradient);
+    letter-spacing: 1.3px;
+    cursor: pointer;
+    background-size: 300%;
+    background-position: left;
+    transition: 1s background-position ease-in-out, 0.8s box-shadow ease-in-out;
+}
+
+.result__button:hover {
+    box-shadow: 0 5px 12px var(--color-darkLavender);
+    background-position: right;
+}
+
+.result__button:focus {
+    box-shadow: 0 5px 12px var(--color-darkLavender);
+    background-position: right;
 }
