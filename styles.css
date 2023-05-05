@@ -10,6 +10,7 @@
     --color-white: hsl(0, 0%, 100%);
     --color-paleBlue: hsl(221, 100%, 96%);
     --color-lavender: hsl(241, 100%, 89%);
+    --color-darkLavender: hsl(241, 30%, 71%);
     --color-gray: hsl(224, 30%, 27%);
 
     --fs-basic: 18px;
@@ -26,7 +27,7 @@ body {
     background: var(--background-gradient);
     border-radius: 0 0 30px 30px;
     display: grid;
-    gap: 25px;
+    gap: 20px;
     padding: 20px 40px 40px 40px;
 }
 
@@ -46,6 +47,8 @@ body {
 
 .score__container {
     text-align: center;
+    font-weight: bold;
+    color: var(--color-darkLavender);
 }
 
 .score__container--achived {
@@ -53,3 +56,14 @@ body {
     font-weight: bolder;
     color: var(--color-white);
 }
+
+.result__subHeader--grade {
+    font-size: 25px;
+    color: var(--color-white);
+}
+
+.result__info {
+    display: grid;
+    gap: 5px;
+}
+
