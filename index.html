@@ -6,33 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Results Summary</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="basicStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="basicStyles.css" />
 </head>
 
 <body>
-    <main>
-        <article>
+    <main class="main">
+        <article class="article">
             <div class="result">
-                <h2>Your Result</h2>
-                <div>
-                    <p>76</p>
-                    <p>of 100</p>
+                <h2 class="result__subHeader">Your Result</h2>
+                <div class="result__score">
+                    <p class="score__container score__container--achived">76</p>
+                    <p class="score__container">of 100</p>
                 </div>
-                <h2>Great</h2>
-                <p>You scored higher than 65% of the people who have taken these tests.</p>
+                <div class="result__info">
+                    <h2 class="result__subHeader result__subHeader--grade">Great</h2>
+                    <p class="result__description">
+                        You scored higher than 65% of the people who have taken these
+                        tests.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h2>Summary</h2>
-                <div>
-
+            <div class="summary">
+                <h2 class="summary__subHeader">Summary</h2>
+                <div class="summary__test">
+                    <div class="test_category test_category--reaction">
+                        <img class="category__icon" src="images/icon-reaction.svg" alt="eye icon" />
+                        <p class="category__name category__name--reaction">Reaction</p>
+                        <p class="category__scored">80</p>
+                        <p class="category__breaker">/</p>
+                        <p class="category__score">100</p>
+                    </div>
+                    <div class="test_category test_category--memory">
+                        <img class="category__icon" src="images/icon-memory.svg" alt="eye icon" />
+                        <p class="category__name category__name--memory">Memory</p>
+                        <p class="category__scored">92</p>
+                        <p class="category__breaker">/</p>
+                        <p class="category__score">100</p>
+                    </div>
+                    <div class="test_category test_category--verbal">
+                        <img class="category__icon" src="images/icon-verbal.svg" alt="eye icon" />
+                        <p class="category__name category__name--verbal">Verbal</p>
+                        <p class="category__scored">61</p>
+                        <p class="category__breaker">/</p>
+                        <p class="category__score">100</p>
+                    </div>
+                    <div class="test_category test_category--visual">
+                        <img class="category__icon" src="images/icon-visual.svg" alt="eye icon" />
+                        <p class="category__name category_name--visual">Visual</p>
+                        <p class="category__scored">72</p>
+                        <p class="category__breaker">/</p>
+                        <p class="category__score">100</p>
+                    </div>
                 </div>
-                <button>
-                    Continue
-                </button>
+                <button class="result__button">Continue</button>
             </div>
         </article>
     </main>
