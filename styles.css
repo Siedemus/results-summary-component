@@ -17,3 +17,15 @@
     --ff-kG: Hanken Grotesk, sans-serif;
 }
 
+body {
+    color: var(--color-lavender);
+    font-family: var(--ff-kG);
+}
+
+.result {
+    background: var(--background-gradient);
+    border-radius: 0 0 30px 30px;
+    display: grid;
+    gap: 15px;
+    padding: 30px;
+}
