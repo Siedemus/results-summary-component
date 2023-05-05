@@ -28,7 +28,7 @@ body {
     border-radius: 0 0 30px 30px;
     display: grid;
     gap: 20px;
-    padding: 20px 40px 40px 40px;
+    padding: 20px 45px 40px 45px;
 }
 
 .result__subHeader {
@@ -67,3 +67,7 @@ body {
     gap: 5px;
 }
 
+.result__description {
+    text-align: center;
+    line-height: 20px;
+}
