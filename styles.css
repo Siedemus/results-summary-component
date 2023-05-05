@@ -71,3 +71,14 @@ body {
     text-align: center;
     line-height: 20px;
 }
+
+.summary {
+    padding: 20px 30px;
+    display: grid;
+    gap: 10px;
+}
+
+.summary__subHeader {
+    color:black;
+    font-size: 18px;
+}
